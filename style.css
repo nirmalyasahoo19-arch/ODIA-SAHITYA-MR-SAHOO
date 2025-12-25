@@ -347,6 +347,42 @@ button{
   font-size:13px;
 }
 
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  gap: 20px;
+  padding: 40px;
+}
+
+/* Book cover styling */
+.book-grid img {
+  width: 100%;
+  height: 260px;          /* controls book height */
+  object-fit: cover;     /* crops nicely like real book */
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect (premium feel) */
+.book-grid img:hover {
+  transform: scale(1.05);
+}
+/* Tablet */
+@media (max-width: 1024px) {
+  .book-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .book-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
 
 
 
