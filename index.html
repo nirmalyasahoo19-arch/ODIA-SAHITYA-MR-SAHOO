@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="or">
+<head>
+<meta charset="UTF-8">
+<title>ଡା.ଦୟାନିଧି ସାହୁ | ଓଡ଼ିଆ ସାହିତ୍ୟ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#f5f2e9;
+  --ink:#2f2b1f;
+  --muted:#6f6a55;
+  --earth:#6b5d32;
+  --leaf:#5a6b3a;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:'Noto Serif Oriya', serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:2;
+}
+
+/* NAV */
+nav{
+  padding:28px 90px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+nav strong{
+  font-size:18px;
+  letter-spacing:.5px;
+}
+nav a{
+  margin-left:32px;
+  text-decoration:none;
+  color:var(--ink);
+  font-size:14px;
+}
+
+/* HERO */
+.hero{
+  padding:140px 90px;
+  display:grid;
+  grid-template-columns:1.1fr 1fr;
+  gap:90px;
+  align-items:center;
+}
+.hero h1{
+  font-size:56px;
+  line-height:1.15;
+}
+.hero h1 span{
+  display:block;
+  font-size:20px;
+  margin-top:18px;
+  color:var(--muted);
+}
+.hero p{
+  margin-top:28px;
+  color:var(--muted);
+  max-width:520px;
+}
+.hero img{
+  width:100%;
+  border-radius:24px;
+}
+
+/* STATS */
+.stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:40px;
+  padding:0 90px 110px;
+}
+.stat h2{font-size:32px}
+.stat p{color:var(--muted);font-size:14px}
+
+/* SECTION */
+section{
+  padding:120px 90px;
+}
+h2{
+  font-size:38px;
+  margin-bottom:18px;
+}
+.sub{
+  color:var(--muted);
+  max-width:640px;
+}
+
+/* BOOKS */
+.books{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:34px;
+  margin-top:60px;
+}
+.book{
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+}
+.book img{width:100%}
+.book div{
+  padding:14px;
+  font-size:14px;
+  text-align:center;
+}
+
+/* EVENTS */
+.events{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:90px;
+  align-items:center;
+}
+.events img{
+  width:100%;
+  border-radius:26px;
+}
+
+/* REVIEWS */
+.reviews{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:40px;
+}
+.review{
+  background:#fff;
+  padding:34px;
+  border-radius:18px;
+  font-size:15px;
+}
+
+/* FAQ */
+.faq{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:50px;
+}
+.faq div{
+  border-top:1px solid #ddd;
+  padding-top:22px;
+}
+
+/* CTA */
+.cta{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  align-items:center;
+}
+.cta img{
+  width:100%;
+  border-radius:22px;
+}
+button{
+  background:var(--earth);
+  color:white;
+  border:none;
+  padding:14px 28px;
+  border-radius:30px;
+  margin-top:22px;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+  background:var(--earth);
+  color:white;
+  padding:90px;
+}
+footer input{
+  padding:14px;
+  width:260px;
+  border:none;
+  border-radius:22px;
+}
+
+@media(max-width:900px){
+  nav,.hero,section,.stats,footer{padding:60px 30px}
+  .hero,.events,.cta{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .hero h1{font-size:40px}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <strong>ଡା.ଦୟାନିଧି ସାହୁ</strong>
+  <div>
+    <a href="#">ପୁସ୍ତକାବଳୀ</a>
+    <a href="#">ଲେଖକ ପରିଚୟ</a>
+    <a href="#">ସାହିତ୍ୟ ଉତ୍ସବ</a>
+    <a href="#">ପାଠକ ମତ</a>
+    <a href="#">ସମ୍ପର୍କ</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div>
+    <h1>
+      ଓଡ଼ିଆ ସାହିତ୍ୟ — ସାଧନା ଓ ସମର୍ପଣ
+      <span>ଡା. ଦୟାନିଧି ସାହୁ · ଓଡ଼ିଆ ସାହିତ୍ୟବିଦ · ଅଧ୍ୟାପକ</span>
+    </h1>
+    <p>
+      ଓଡ଼ିଆ ସାହିତ୍ୟ, ଦର୍ଶନ ଓ ସଂସ୍କୃତିରେ
+      ଦୀର୍ଘ ଶିକ୍ଷଣ ଓ ଗବେଷଣାର ଏକ ନିରନ୍ତର ପଥ।
+      ପ୍ରତି ବର୍ଷ ଡିସେମ୍ବରରେ ଏକ ନୂଆ ସାହିତ୍ୟିକ କୃତି ପ୍ରକାଶିତ।
+    </p>
+    <section>
+  <h2>ଲେଖକ ପରିଚୟ</h2>
+  <p class="sub">
+    ଓଡ଼ିଆ ସାହିତ୍ୟ, ଦର୍ଶନ ଓ ସଂସ୍କୃତି ପ୍ରତି ଏକ ଜୀବନବ୍ୟାପୀ ସମର୍ପଣ
+  </p>
+
+  <p>
+    ଡା. ଦୟାନିଧି ସାହୁ ଓଡ଼ିଆ ସାହିତ୍ୟ ଜଗତର ଏକ ପରିଚିତ ନାମ।
+    ତାଙ୍କର ସାହିତ୍ୟିକ ଯାତ୍ରା କେବଳ ଲେଖନରେ ସୀମିତ ନୁହେଁ,
+    ଏହା ଓଡ଼ିଆ ଭାଷା, ଦର୍ଶନ ଓ ସାଂସ୍କୃତିକ ଚିନ୍ତାଧାରା ସହ ଏକ
+    ଗଭୀର ଆତ୍ମିକ ସମ୍ପର୍କ।
+  </p>
+
+  <p>
+    ଛାତ୍ରଜୀବନରୁ ଆରମ୍ଭ କରି ଅଧ୍ୟାପନା ଓ ଗବେଷଣା ପର୍ଯ୍ୟନ୍ତ,
+    ଓଡ଼ିଆ ସାହିତ୍ୟ ତାଙ୍କର ଜୀବନର ନିତ୍ୟ ସଙ୍ଗୀ।
+    ଶାସ୍ତ୍ରୀୟ ଦର୍ଶନ, ସମକାଳୀନ ସମାଜ,
+    ଓ ଓଡ଼ିଆ ଲୋକସଂସ୍କୃତି ତାଙ୍କର ରଚନାର ମୂଳ ଆଧାର।
+  </p>
+
+  <p>
+    ଡା. ସାହୁଙ୍କ ଦୃଷ୍ଟିରେ ସାହିତ୍ୟ କେବଳ ପୁସ୍ତକ ନୁହେଁ —
+    ଏହା ଏକ ସାମାଜିକ ଦାୟିତ୍ୱ,
+    ଯାହା ମାନବୀୟ ମୂଲ୍ୟ, ନୀତି ଓ ସଂସ୍କୃତିକୁ ଆଗାମୀ ପିଢ଼ିକୁ ସମର୍ପଣ କରେ।
+  </p>
+</section>
+
+    <button>ପୁସ୍ତକାବଳୀ ଦେଖନ୍ତୁ</button>
+  </div>
+  <div class="author-card">
+    <img 
+      src="https://lh3.googleusercontent.com/d/1Gh-STiS0ly1wVjjgx77vVM_kGWoC1G5j"
+      alt="ଡା. ଦୟାନିଧି ସାହୁ"
+    >
+
+    <p class="author-name">ଡା. ଦୟାନିଧି ସାହୁ</p>
+    <p class="author-title">ଓଡ଼ିଆ ସାହିତ୍ୟବିଦ· ଏବଂ ଅଧ୍ୟାପକ</p>
+  </div>
+</div>
+</div>
+
+<div class="stats">
+  <div class="stat"><h2>୧୫+</h2><p>ପ୍ରକାଶିତ ପୁସ୍ତକ</p></div>
+  <div class="stat"><h2>୩୦+</h2><p>ଶିକ୍ଷଣ ଓ ଗବେଷଣା ବର୍ଷ</p></div>
+  <div class="stat"><h2>୨୦+</h2><p>ସାହିତ୍ୟ ଉତ୍ସବ</p></div>
+  <div class="stat"><h2>୧୦୦୦+</h2><p>ପାଠକ ଓ ଗବେଷକ</p></div>
+</div>
+
+<section>
+  <h2>ଚୟିତ ପୁସ୍ତକାବଳୀ</h2>
+  <p class="sub">ମୁଦ୍ରିତ ଓ ଡିଜିଟାଲ୍ ସଂସ୍କରଣ</p>
+
+<div class="books-grid">
+
+  <!-- BOOK 1 -->
+  <div class="book-card">
+    <img src="https://lh3.googleusercontent.com/d/1Wpq8DlzIk93XCsQdFBF-bJwVDeaK5Flw">
+    <h4>ଚୟିତ ପୁସ୍ତକ – ୧</h4>
+    <p class="price">₹149 <span>₹299</span></p>
+    <div class="actions">
+      <button onclick="addToCart('ଚୟିତ ପୁସ୍ତକ – ୧',149,'pdf/book1.pdf')">🛒 Add to Cart</button>
+      <button class="buy" onclick="buyNow('ଚୟିତ ପୁସ୍ତକ – ୧',149,'pdf/book1.pdf')">⚡ Buy Now</button>
+    </div>
+  </div>
+
+  <!-- BOOK 2 -->
+  <div class="book-card">
+    <img src="https://lh3.googleusercontent.com/d/1Xg3ds8nWTy2VrrR8iqkrxihAuZKGGMRI">
+    <h4>ଚୟିତ ପୁସ୍ତକ – ୨</h4>
+    <p class="price">₹129 <span>₹249</span></p>
+    <div class="actions">
+      <button onclick="addToCart('ଚୟିତ ପୁସ୍ତକ – ୨',129,'pdf/book2.pdf')">🛒 Add to Cart</button>
+      <button class="buy" onclick="buyNow('ଚୟିତ ପୁସ୍ତକ – ୨',129,'pdf/book2.pdf')">⚡ Buy Now</button>
+    </div>
+  </div>
+
+  <!-- BOOK 3 -->
+  <div class="book-card">
+    <img src="https://lh3.googleusercontent.com/d/1civbZqsFiGLU5j8p7NDxSCFjS1aVnk3Q">
+    <h4>ଚୟିତ ପୁସ୍ତକ – ୩</h4>
+    <p class="price">₹159 <span>₹259</span></p>
+    <div class="actions">
+      <button onclick="addToCart('ଚୟିତ ପୁସ୍ତକ – ୩',159,'pdf/book3.pdf')">🛒 Add to Cart</button>
+      <button class="buy" onclick="buyNow('ଚୟିତ ପୁସ୍ତକ – ୩',159,'pdf/book3.pdf')">⚡ Buy Now</button>
+    </div>
+  </div>
+
+  <!-- BOOK 4 -->
+  <div class="book-card">
+    <img src="https://lh3.googleusercontent.com/d/16gP2uJjZygCODbZ9gtzRNPXzFFAzkkSj">
+    <h4>ଚୟିତ ପୁସ୍ତକ – ୪</h4>
+    <p class="price">₹179 <span>₹279</span></p>
+    <div class="actions">
+      <button onclick="addToCart('ଚୟିତ ପୁସ୍ତକ – ୪',179,'pdf/book4.pdf')">🛒 Add to Cart</button>
+      <button class="buy" onclick="buyNow('ଚୟିତ ପୁସ୍ତକ – ୪',179,'pdf/book4.pdf')">⚡ Buy Now</button>
+    </div>
+  </div>
+
+  <!-- BOOK 5 -->
+  <div class="book-card">
+    <img src="https://lh3.googleusercontent.com/d/1syAMNTlCjMspQrXOQqunFEBsCaLwwj7j">
+    <h4>ଚୟିତ ପୁସ୍ତକ – ୫</h4>
+    <p class="price">₹99 <span>₹199</span></p>
+    <div class="actions">
+      <button onclick="addToCart('ଚୟିତ ପୁସ୍ତକ – ୫',99,'pdf/book5.pdf')">🛒 Add to Cart</button>
+      <button class="buy" onclick="buyNow('ଚୟିତ ପୁସ୍ତକ – ୫',99,'pdf/book5.pdf')">⚡ Buy Now</button>
+    </div>
+  </div>
+
+  <!-- BOOKS 6–15 (same pattern) -->
+  <!-- Just change image, title, price & pdf -->
+
+  <!-- BOOK 6 -->
+  <div class="book-card">
+    <img src="https://lh3.googleusercontent.com/d/1_E8yiBBLa4ogFbOLwLs3M7XT45GCC2qf">
+    <h4>ଚୟିତ ପୁସ୍ତକ – ୬</h4>
+    <p class="price">₹149 <span>₹249</span></p>
+    <div class="actions">
+      <button onclick="addToCart('ଚୟିତ ପୁସ୍ତକ – ୬',149,'pdf/book6.pdf')">🛒 Add to Cart</button>
+      <button class="buy" onclick="buyNow('ଚୟିତ ପୁସ୍ତକ – ୬',149,'pdf/book6.pdf')">⚡ Buy Now</button>
+    </div>
+  </div>
+
+  <!-- BOOK 7 -->
+  <div class="book-card">
+    <img src="https://lh3.googleusercontent.com/d/1eNCR3HonIsrusSnkEXyNPfxsKdSV9Ucg">
+    <h4>ଚୟିତ ପୁସ୍ତକ – ୭</h4>
+    <p class="price">₹159 <span>₹259</span></p>
+    <div class="actions">
+      <button onclick="addToCart('ଚୟିତ ପୁସ୍ତକ – ୭',159,'pdf/book7.pdf')">🛒 Add to Cart</button>
+      <button class="buy" onclick="buyNow('ଚୟିତ ପୁସ୍ତକ – ୭',159,'pdf/book7.pdf')">⚡ Buy Now</button>
+    </div>
+  </div>
+
+  <!-- BOOK 8 -->
+  <div class="book-card">
+    <img src="https://lh3.googleusercontent.com/d/1gLDGajkpfFzc1ACTLQRoMvdMYtNH2ax0">
+    <h4>ଚୟିତ ପୁସ୍ତକ – ୮</h4>
+    <p class="price">₹139 <span>₹239</span></p>
+    <div class="actions">
+      <button onclick="addToCart('ଚୟିତ ପୁସ୍ତକ – ୮',139,'pdf/book8.pdf')">🛒 Add to Cart</button>
+      <button class="buy" onclick="buyNow('ଚୟିତ ପୁସ୍ତକ – ୮',139,'pdf/book8.pdf')">⚡ Buy Now</button>
+    </div>
+  </div>
+
+  <!-- BOOK 9 -->
+  <div class="book-card">
+    <img src="https://lh3.googleusercontent.com/d/16Oi1K0_OaburgB1eBO68NhDdEkhdZGhC">
+    <h4>ଚୟିତ ପୁସ୍ତକ – ୯</h4>
+    <p class="price">₹129 <span>₹229</span></p>
+    <div class="actions">
+      <button onclick="addToCart('ଚୟିତ ପୁସ୍ତକ – ୯',129,'pdf/book9.pdf')">🛒 Add to Cart</button>
+      <button class="buy" onclick="buyNow('ଚୟିତ ପୁସ୍ତକ – ୯',129,'pdf/book9.pdf')">⚡ Buy Now</button>
+    </div>
+  </div>
+
+  <!-- BOOK 10 -->
+  <div class="book-card">
+    <img src="https://lh3.googleusercontent.com/d/1YyRbODekjsfRP7GLNr1yj_mbTwERQqH_">
+    <h4>ଚୟିତ ପୁସ୍ତକ – ୧୦</h4>
+    <p class="price">₹119 <span>₹219</span></p>
+    <div class="actions">
+      <button onclick="addToCart('ଚୟିତ ପୁସ୍ତକ – ୧୦',119,'pdf/book10.pdf')">🛒 Add to Cart</button>
+      <button class="buy" onclick="buyNow('ଚୟିତ ପୁସ୍ତକ – ୧୦',119,'pdf/book10.pdf')">⚡ Buy Now</button>
+    </div>
+  </div>
+
+  <!-- BOOK 11 -->
+  <div class="book-card">
+    <img src="https://lh3.googleusercontent.com/d/12xq5OdK1BHr5lnK_cmMh_Trk06Cs5nny">
+    <h4>ଚୟିତ ପୁସ୍ତକ – ୧୧</h4>
+    <p class="price">₹149 <span>₹249</span></p>
+    <div class="actions">
+      <button onclick="addToCart('ଚୟିତ ପୁସ୍ତକ – ୧୧',149,'pdf/book11.pdf')">🛒 Add to Cart</button>
+      <button class="buy" onclick="buyNow('ଚୟିତ ପୁସ୍ତକ – ୧୧',149,'pdf/book11.pdf')">⚡ Buy Now</button>
+    </div>
+  </div>
+
+  <!-- BOOK 12 -->
+  <div class="book-card">
+    <img src="https://lh3.googleusercontent.com/d/187Uv7SaWEbADTbHanZF84npA5TO4CNbv">
+    <h4>ଚୟିତ ପୁସ୍ତକ – ୧୨</h4>
+    <p class="price">₹139 <span>₹239</span></p>
+    <div class="actions">
+      <button onclick="addToCart('ଚୟିତ ପୁସ୍ତକ – ୧୨',139,'pdf/book12.pdf')">🛒 Add to Cart</button>
+      <button class="buy" onclick="buyNow('ଚୟିତ ପୁସ୍ତକ – ୧୨',139,'pdf/book12.pdf')">⚡ Buy Now</button>
+    </div>
+  </div>
+
+  <!-- BOOK 13 -->
+  <div class="book-card">
+    <img src="https://lh3.googleusercontent.com/d/1gwFQT7gHaOBpENFE9Mr0zOaKjvvn5oLi">
+    <h4>ଚୟିତ ପୁସ୍ତକ – ୧୩</h4>
+    <p class="price">₹159 <span>₹259</span></p>
+    <div class="actions">
+      <button onclick="addToCart('ଚୟିତ ପୁସ୍ତକ – ୧୩',159,'pdf/book13.pdf')">🛒 Add to Cart</button>
+      <button class="buy" onclick="buyNow('ଚୟିତ ପୁସ୍ତକ – ୧୩',159,'pdf/book13.pdf')">⚡ Buy Now</button>
+    </div>
+  </div>
+
+  <!-- BOOK 14 -->
+  <div class="book-card">
+    <img src="https://lh3.googleusercontent.com/d/1m1Qi42AfQnvRUhxzr9J6Wr5gkwHRjGs9">
+    <h4>ଚୟିତ ପୁସ୍ତକ – ୧୪</h4>
+    <p class="price">₹139 <span>₹239</span></p>
+    <div class="actions">
+      <button onclick="addToCart('ଚୟିତ ପୁସ୍ତକ – ୧୪',139,'pdf/book14.pdf')">🛒 Add to Cart</button>
+      <button class="buy" onclick="buyNow('ଚୟିତ ପୁସ୍ତକ – ୧୪',139,'pdf/book14.pdf')">⚡ Buy Now</button>
+    </div>
+  </div>
+
+  <!-- BOOK 15 -->
+  <div class="book-card">
+    <img src="https://lh3.googleusercontent.com/d/1ff68zLLoAOKjUASE2ORqyTIaSNFUxyWA">
+    <h4>ଚୟିତ ପୁସ୍ତକ – ୧୫</h4>
+    <p class="price">₹129 <span>₹229</span></p>
+    <div class="actions">
+      <button onclick="addToCart('ଚୟିତ ପୁସ୍ତକ – ୧୫',129,'pdf/book15.pdf')">🛒 Add to Cart</button>
+      <button class="buy" onclick="buyNow('ଚୟିତ ପୁସ୍ତକ – ୧୫',129,'pdf/book15.pdf')">⚡ Buy Now</button>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+</section>
+
+<section class="events">
+  <div>
+    <h2>ବାର୍ଷିକ ଡିସେମ୍ବର ପୁସ୍ତକ ପ୍ରକାଶନ</h2>
+    <p class="sub">
+      ପ୍ରତି ବର୍ଷ ଡିସେମ୍ବର ମାସରେ
+      ନୂଆ ପୁସ୍ତକ ପ୍ରକାଶନ ସହ
+      ପାଠକ ସମ୍ମିଳନ, ଆଲୋଚନା ଓ ସାହିତ୍ୟ ଉତ୍ସବ ଆୟୋଜିତ।
+    </p>
+  </div>
+  <img src="images/event.jpg">
+</section>
+
+<section>
+  <h2>ପାଠକ ଓ ଗବେଷକଙ୍କ ମତାମତ</h2>
+  <div class="reviews">
+    <div class="review">
+      “ଡା. ସାହୁଙ୍କ ଲେଖନରେ ଓଡ଼ିଆ ଦର୍ଶନ ଓ ସମକାଳୀନ ସମାଜର ସୁନ୍ଦର ସମନ୍ୱୟ ଦେଖାଯାଏ।”
+    </div>
+    <div class="review">
+      “ଓଡ଼ିଆ ସାହିତ୍ୟରେ ଏକ ଗଭୀର ଓ ଚିନ୍ତନଶୀଳ ଅବଦାନ।”
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>ପ୍ରଶ୍ନୋତ୍ତର</h2>
+  <div class="faq">
+    <div>
+      <strong>ଡିଜିଟାଲ୍ ପୁସ୍ତକ ମିଳିବ କି?</strong><br>
+      ହଁ, ଚୟିତ ପୁସ୍ତକଗୁଡ଼ିକ ସଦସ୍ୟତା ମାଧ୍ୟମରେ ଉପଲବ୍ଧ।
+    </div>
+    <div>
+      <strong>ନୂଆ ପୁସ୍ତକ କେବେ ପ୍ରକାଶିତ ହୁଏ?</strong><br>
+      ପ୍ରତି ବର୍ଷ ଡିସେମ୍ବର ମାସରେ।
+    </div>
+    <div>
+      <strong>ସାହିତ୍ୟ ଉତ୍ସବ ହୁଏ କି?</strong><br>
+      ହଁ, ପୁସ୍ତକ ପ୍ରକାଶନ ସହ ସାହିତ୍ୟ ଉତ୍ସବ ଆୟୋଜିତ।
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <img src="images/library.jpg">
+  <div>
+    <h2>ଓଡ଼ିଆ ସାହିତ୍ୟରେ ଏକ ଯାତ୍ରା</h2>
+    <button>ପୁସ୍ତକ କ୍ରୟ / ସଦସ୍ୟତା</button>
+  </div>
+</section>
+
+<footer>
+  <h2>ସଂଯୋଗରେ ରୁହନ୍ତୁ</h2>
+  <input placeholder="ଇମେଲ୍ ଠିକଣା">
+  <p style="margin-top:40px">
+    © ୨୦୨୫ · ଡା. ଦୟାନିଧି ସାହୁ<br>
+    ଓଡ଼ିଆ ସାହିତ୍ୟ ଓ ସାଂସ୍କୃତିକ ଗବେଷଣା
+  </p>
+</footer>
+
+</body>
+</html>
